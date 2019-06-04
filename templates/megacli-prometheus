@@ -1,0 +1,3 @@
+# {{ ansible_managed }}
+%{{ node_exporter_user }} ALL=(ALL) NOPASSWD: /usr/sbin/megacli -AdpAllInfo -aALL
+%{{ node_exporter_user }} ALL=(ALL) NOPASSWD: /usr/sbin/megacli -PDList -aALL
