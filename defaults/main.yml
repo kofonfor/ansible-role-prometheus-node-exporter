@@ -39,6 +39,7 @@ node_exporter_collector_lastlogin: no
 node_exporter_collector_megacli: no
 node_exporter_collector_meminfo_numa: no
 node_exporter_collector_ntp: yes
+node_exporter_collector_processes: yes
 node_exporter_collector_runit: no
 node_exporter_collector_supervisord: no
 node_exporter_collector_systemd: yes

@@ -79,6 +79,7 @@ dependencies:
               {%- if node_exporter_collector_ksmd         %} --collector.ksmd{%- endif -%}
               {%- if node_exporter_collector_meminfo_numa %} --collector.meminfo_numa{%- endif -%}
               {%- if node_exporter_collector_ntp          %} --collector.ntp{%- endif -%}
+              {%- if node_exporter_collector_processes    %} --collector.processes{%- endif -%}
               {%- if node_exporter_collector_runit        %} --collector.runit{%- endif -%}
               {%- if node_exporter_collector_supervisord  %} --collector.supervisord{%- endif -%}
               {%- if node_exporter_collector_systemd      %} --collector.systemd{%- endif -%}
