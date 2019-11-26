@@ -14,7 +14,7 @@ dependencies:
       systemd_service_name: node_exporter
       systemd_service_user: "{{ node_exporter_user }}"
       systemd_service_command: "{{ node_exporter_base_dir }}/node_exporter"
-      systemd_service_params: "--web.listen-address=\":{{ node_exporter_port }}\"
+      systemd_service_params: "--web.listen-address=:{{ node_exporter_port }}
               --collector.textfile.directory={{ node_exporter_data_dir }}
               {%- if node_exporter_collector_conntrack %} --collector.conntrack{%- endif -%}
               {%- if node_exporter_collector_diskstats    %} --collector.diskstats{%- endif -%}
